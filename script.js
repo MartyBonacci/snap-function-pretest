@@ -52,6 +52,12 @@ function dotProduct(a,b) {
 	return(result);
 }
 
+// overstock exchange rate snap challenge function
+function deduct(price,walletStart, exchangeRate) {
+	walletBalance = walletStart - price / exchangeRate;
+	return(walletBalance);
+}
+
 window.onload = function() {
 	runThemAll();
 }
